@@ -1,24 +1,24 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #e3f2fd; /* Azul claro */
     color: #333;
     margin: 0;
     padding: 20px;
 }
 
 h1 {
-    color: #4CAF50;
+    color: #1e88e5; /* Azul más fuerte */
 }
 
 .objeto {
     display: inline-block;
     margin: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #90caf9; /* Azul suave para los bordes */
     border-radius: 8px;
     padding: 10px;
     width: 200px;
-    background-color: #fff;
+    background-color: #fff; /* Fondo blanco */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
 }
@@ -34,11 +34,23 @@ img {
 }
 
 h2 {
-    color: #E91E63;
+    color: #1e88e5; /* Azul fuerte para los títulos de productos */
     margin: 10px 0;
 }
 
 p {
     font-size: 14px;
     color: #555;
+}
+
+ul {
+    list-style-type: disc; /* Usar viñetas */
+    padding-left: 20px; /* Espaciado para las viñetas */
+    text-align: left; /* Alinear a la izquierda */
+    margin: 10px 0; /* Margen para la lista */
+}
+
+li {
+    margin: 5px 0; /* Espaciado entre características */
+    color: #555; /* Color para las características */
 }
