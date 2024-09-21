@@ -14,13 +14,15 @@ h1 {
 .objeto {
     display: inline-block;
     margin: 20px;
-    border: 1px solid #90caf9; /* Azul suave para los bordes */
+    border: 1px solid #90caf9; /* Bordes azul claro */
     border-radius: 8px;
     padding: 10px;
     width: 200px;
-    background-color: #fff; /* Fondo blanco */
+    height: 350px; /* Altura fija para uniformidad */
+    background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+    vertical-align: top; /* Alinear en la parte superior */
 }
 
 .objeto:hover {
@@ -31,26 +33,45 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
+    max-height: 150px; /* Altura máxima para las imágenes */
 }
 
 h2 {
-    color: #1e88e5; /* Azul fuerte para los títulos de productos */
+    color: #1976d2; /* Azul medio */
     margin: 10px 0;
 }
 
 p {
     font-size: 14px;
-    color: #555;
+    color: #000; /* Negro más oscuro */
+}
+
+.detalles {
+    display: none; /* Ocultar detalles por defecto */
+    text-align: left;
+    margin-top: 10px;
+    color: #555; /* Negro más claro */
+}
+
+.boton-ver-detalles {
+    position: absolute; /* Posición absoluta para el botón */
+    bottom: 10px; /* Espacio desde la parte inferior */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Ajustar posición */
+    background-color: #1e88e5; /* Azul más fuerte */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.boton-ver-detalles:hover {
+    background-color: #1565c0; /* Azul más oscuro al pasar el mouse */
 }
 
 ul {
     list-style-type: disc; /* Usar viñetas */
     padding-left: 20px; /* Espaciado para las viñetas */
     text-align: left; /* Alinear a la izquierda */
-    margin: 10px 0; /* Margen para la lista */
-}
-
-li {
-    margin: 5px 0; /* Espaciado entre características */
-    color: #555; /* Color para las características */
 }
